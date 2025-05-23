@@ -28,7 +28,7 @@
       // Loading and processing the CSV data
       React.useEffect(() => {
         setLoading(true);
-        fetch('https://erada91.github.io/student-results-3/Medical_Physics.csv')
+        fetch('./Medical_Physics.csv')
           .then(response => response.text())
           .then(csvData => {
             Papa.parse(csvData, {
